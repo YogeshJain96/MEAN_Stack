@@ -1,0 +1,26 @@
+MEAN Stack Evaluation: 1/1/2020
+
+Build Books Management system as Node JS Application using NodeJS, Express and Angular (MEAN Stack)
+
+This application would be hosted in Express Application as NodeJS Application.
+1.User will be routed  default to index.html.
+
+2.Add REST API which would return List of Books available through Library Array maintained at Server Side.
+
+3.Build Single Page Application (angular bundle) in your express application for Library to maintain books available for students thier self learning.
+
+4.Book would contain BookID, Title, category, Availalbe (true or false).
+
+5.Single page application would have default routes for  List, Details, Login and Register.
+
+6.List component would show List of books available
+
+7.Detail component would show particular book selected from List Component
+
+8.Login component would validate candidate with username and password using Angular Service 
+
+9.Single Page Application would be designed and developed using clean separation of cocern principle
+
+10.Test indivdual Services /books to  return json data of books available
+
+
