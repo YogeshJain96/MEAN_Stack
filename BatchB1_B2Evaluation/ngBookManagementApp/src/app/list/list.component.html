@@ -1,0 +1,5 @@
+<p>Books List </p>
+<ul *ngFor="let book of books">
+    <li>{{book.Title}}&mdash;{{book.category}}  <a [routerLink]="['/details',book.BookID]">Details</a></li>
+    <!-- &mdash;{{book.price| currency:"₹"}} -->
+</ul>
