@@ -1,0 +1,13 @@
+<h1>Basic User App</h1>
+<!-- 5.Defining RouterLinks and router outlet
+(Dynamic component loaded )
+(Dynamic View Container)
+in app.component.html -->
+<nav>
+  <a routerLink="/login" routerLinkActive="active">Login</a>
+  <a routerLink="/register" routerLinkActive="active">Register</a>
+  <a routerLink="/changepassword" routerLinkActive="active">Change Password</a>
+  <a routerLink="/users" routerLinkActive="active">Users</a>
+</nav>
+<!-- Outlet will show the components called -->
+<router-outlet></router-outlet>

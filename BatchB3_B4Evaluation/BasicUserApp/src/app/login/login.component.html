@@ -1,0 +1,30 @@
+<h2>Login Form</h2>
+<form>
+    <table>
+        <tr> 
+            <td>UserName:</td>
+            <td><input type="text"  [(ngModel)] = "userName" name="userName" required/></td>
+        </tr>
+        <tr> 
+            <td>Password:</td>
+            <td><input type="password"  [(ngModel)] = 'password' name="password" required/></td>
+           
+        </tr>
+        <tr>
+            <td>
+                <a routerLink="/changepassword" routerLinkActive="active">Change Password</a>
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                <button (click)="onLogin()">Login</button>
+            </td>
+           
+        </tr>
+    </table>
+</form>
+
+You Entered:<b> {{userName}}</b>
+
+<h2>{{msg}}</h2>
