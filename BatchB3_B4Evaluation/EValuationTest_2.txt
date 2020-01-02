@@ -1,0 +1,29 @@
+
+
+MEAN Stack Evaluation: 2/1/2020
+
+
+Build Credential Management as Single Page Application using MEAN Stack.
+
+This SPA application would be hosted in Express Application as NodeJS Application.
+
+
+1.User will be routed  default to index.html when accessed using url http://localhost:5656/
+
+2.Node JS Application would provide Single Page Application user interface using Angular Framework
+
+3.Single Page Application should provide navigation links for Login, Register, Users, ChangePagssword
+
+4.Application would be delveloped using Client Side Routing Technique and Component based Approach.
+
+5. Using Login link End User would be validated based on credential submitted to Angular
+
+6. User Register link to register new user in users collection maintained at Client Side
+
+7. Users link in SPA should list down all users names as another User interface.
+
+8. Allow  authenticated user to change his/ her password of through change password link
+
+9. Single Page Application would be designed and developed using clean separation of cocern principle
+
+10. Deploy Angular Application to newly build Node JS Express Application.
