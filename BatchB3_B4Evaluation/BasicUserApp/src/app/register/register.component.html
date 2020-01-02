@@ -3,24 +3,25 @@
     <table>
         <tr> 
             <td>UserName:</td>
-            <td><input type="text"/></td>
+            <td><input type="text" [(ngModel)]="username" name="u"/></td>
         </tr>
         <tr> 
             <td>Password:</td>
-            <td><input type="password"/></td>
+            <td><input type="password" [(ngModel)]="password" name="u"/></td>
            
         </tr>
         <tr> 
             <td>Confirm Password:</td>
-            <td><input type="password"/></td>
+            <td><input type="password"  [(ngModel)]="password" name="p"/></td>
            
         </tr>
        
         <tr>
             <td>
-                <button type="submit">Register</button>
+                <button (click)="onRegister()">Register</button>
             </td>
            
         </tr>
     </table>
 </form>
+<h1>{{msg}}</h1>

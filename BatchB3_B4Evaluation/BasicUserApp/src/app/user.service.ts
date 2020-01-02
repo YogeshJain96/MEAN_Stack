@@ -7,9 +7,9 @@ import { Injectable } from '@angular/core';
 // })
 export class UserService {
   users: any = [
-    { "UserID": 101, "UserName": "User1", "Password": "pass123" },
-    { "UserID": 102, "UserName": "User2", "Password": "pass123" },
-    { "UserID": 103, "UserName": "User3", "Password": "pass123" }
+    { "UserID": 101, "UserName": "user1", "Password": "seed" },
+    { "UserID": 102, "UserName": "user2", "Password": "pass123" },
+    { "UserID": 103, "UserName": "user3", "Password": "pass123" }
   ];
 
   status: Boolean;
@@ -24,11 +24,11 @@ export class UserService {
     console.log(u);
 
     this.status = false;
-
-    if (u.userName == "User1" && u.password == "seed")
-      this.status = true;
-    else
-      this.status = false;
+    this.users.forEach(user=> {
+      if (u.userName == user.userName && u.password == user.password)
+        this.status = true;
+    });
+    
     console.log("status : " + this.status);
 
     return this.status;
@@ -36,12 +36,12 @@ export class UserService {
   public addUser(u:any): any {
     console.log(u);
     this.users.push(u);
-    return "success";
+    return "Registered Successfully";
   }
   public changePassword(u:any): any {
     console.log(u);
     this.users.push(u);
-    return "success";
+    return "Password Changed";
   }
 
 }
