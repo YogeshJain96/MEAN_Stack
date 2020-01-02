@@ -25,7 +25,7 @@ export class UserService {
 
     this.status = false;
     this.users.forEach(user=> {
-      if (u.userName == user.userName && u.password == user.password)
+      if (u.userName == user.UserName && u.password == user.Password)
         this.status = true;
     });
     
