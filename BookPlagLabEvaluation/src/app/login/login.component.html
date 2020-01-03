@@ -1,0 +1,38 @@
+<div *ngIf="loginFlag; then bookWriteBlock; else loginBlock"></div>
+<ng-template #loginBlock>
+  <H1>Login Form</H1>
+  Enter UserName: <input type="text" [(ngModel)]="username" /><br />
+  Enter Password: <input type="password" [(ngModel)]="password" /><br />
+  <input type="submit" (click)="onLogin()" />
+  <h2>{{ msg }}</h2>
+</ng-template>
+
+<ng-template #bookWriteBlock>
+  <div *ngIf="showPlag; then plagReportBlock; else writeBookBlock"></div>
+  <ng-template #writeBookBlock>
+ 
+    <H1>Write Book</H1>
+    Hello,{{ authorname }}
+    <p>BookId: {{ bookid }}</p>
+    Enter Book Name:<input type="text" [(ngModel)]="bookname" /><br />
+    Enter Content: <input type="text" [(ngModel)]="bookcontent" /><br />
+    <input type="button" (click)="onClear()" value="Clear" />
+    <input type="button" (click)="onSave()" value="Save" />
+
+  </ng-template>
+  <ng-template #plagReportBlock>
+ 
+      <h1>Plagarism-Report here!</h1>
+      <input type="button" (click)="generateReport()" value="Generate Report" />
+      <p>Book1-------------Book2</p>
+      <p>No of Words:Book1={{ n1Words }}, Book2={{ n2Words }}</p>
+      <p>No of Sentences:Book1={{ n1Sentences }}, Book2={{ n2Sentences }}</p>
+      <p>Repeated Words:{{ rWords }}</p>
+      <p>Repeated Sentences:{{ rSentences }}</p>
+
+  </ng-template>
+
+ 
+
+
+</ng-template>
